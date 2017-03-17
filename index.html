@@ -12,23 +12,31 @@
 </head>
 
 <body>
+        
     <div class="container">
-        <button id="markAllCompleted">O</button> <input type="text" id="todoText" />
+    <h1>todos</h1>
+        <button id="markAllCompleted" class="check">&#x2714;</button> <input type="text" id="todoText" class="input" placeholder="What needs to be done" />
 
         <ul id="todoList"></ul>
-
-        <div>
-            <span>Todos left: <span id="todosLeft"></span></span>
-
-            <button id="showAll">All</button>
-            <button id="showActive">Active</button>
-            <button id="showCompleted">Completed</button>
-
-            <button id="clearCompleted">Clear completed</button>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <span>Todos left: <span id="todosLeft"></span></span>
+            </div>
+            
+            <div class="col-md-4">
+                <button id="showAll" class="left">All</button>
+                <button id="showActive" class="center">Active</button>
+                <button id="showCompleted" class="right">Completed</button>
+            </div>
+            
+            <div class="col-md-4">
+                <button id="clearCompleted" class="rightCorner">Clear completed</button>
+            </div>
         </div>
 
         <div style="display: none;">
-            <li><input type="checkbox"> <span>Todo text</span> <button>X</button></li>
+            <li><input type="checkbox"> <span>Todo text</span> <button class="cancel">х</button></li>
         </div>
     </div>
 
